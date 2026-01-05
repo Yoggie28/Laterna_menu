@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laterna - Παραδοσιακή Κουζίνα</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 30px;
+        }
+
+        .logo-image {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 30px;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            display: none;
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: #7f8c8d;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .section {
+            margin-bottom: 45px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #2c3e50;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .menu-item {
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .item-info {
+            flex: 1;
+        }
+
+        .item-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .item-name-gr {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+            font-style: italic;
+        }
+
+        .item-description {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .item-price {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2c3e50;
+            white-space: nowrap;
+            padding-top: 5px;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #ecf0f1;
+            margin: 30px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #2c3e50;
+            color: #7f8c8d;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .logo-text {
+                font-size: 36px;
+            }
+
+            .menu-item {
+                flex-direction: column;
+            }
+
+            .item-price {
+                padding-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="IMAGES/Laterna_Logo_Navy_Blue_Background.jpg" alt="Laterna Logo" class="logo-image">
+            <div class="logo-text">Laterna</div>
+            <div class="tagline">Παραδοσιακή Κουζίνα</div>
+        </div>
+
+        <!-- BREAD & DIPS -->
+        <div class="section">
+            <div class="section-title">ΨΩΜΙ / BREAD</div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΨΩΜΙ / BREAD</div>
+                    <div class="item-description">Ψωμί  / Bread </div>
+                </div>
+                <div class="item-price">1.50€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΕΛΙΕΣ ΚΑΛΑΜΩΝ / KALAMATA OLIVES</div>
+                    <div class="item-description">Εξαιρετικές ελιές Καλαμών / Premium Kalamata olives</div>
+                </div>
+                <div class="item-price">3.50€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΕΛΑΙΟΛΑΔΟ / OLIVE OIL 50ML</div>
+                    <div class="item-description">Έξτρα παρθένο ελαιόλαδο / Extra virgin olive oil</div>
+                </div>
+                <div class="item-price">3.00€</div>
+            </div>
+
+            <div class="divider"></div>
+        </div>
+
+        <!-- DIPS -->
+        <div class="section">
+            <div class="section-title">ΑΛΟΙΦΕΣ / DIPS</div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΤΥΡΟΚΑΥΤΕΡΗ / TIROKAFTERI (SPICY FETA DIP)</div>
+                    <div class="item-description">Πικάντικη κρέμα φέτας με πάστα ψητής πιπεριάς / Spicy feta cream with roasted pepper paste</div>
+                </div>
+                <div class="item-price">4.50€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΦΑΒΑ ΦΕΝΕΟΥ / FAVA BEAN PUREE FROM FENEOS</div>
+                    <div class="item-description">Φάβα με μυρωδικά, τραγανή κάπαρη, ελαιόλαδο και κρίταμο / Fava beans with herbs, crispy toasts, olive oil and fennel</div>
+                </div>
+                <div class="item-price">5.00€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΤΑΡΑΜΑΣ / FISH ROE DIP</div>
+                    <div class="item-description">Μους ταραμά με σχοινόπρασο και τραγανό ψωμάκι / Mousse fish dip with chives and crispy bread</div>
+                </div>
+                <div class="item-price">4.50€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΤΖΑΤΖΙΚΙ / TZATZIKI</div>
+                    <div class="item-description">Στραγγιστό γιαούρτι, σκόρδο, πούδρα φρέσκων μυρωδικών και ελαιόλαδο / Strained yogurt, garlic, fresh herbs powder and olive oil</div>
+                </div>
+                <div class="item-price">4.50€</div>
+            </div>
+
+            <div class="divider"></div>
+        </div>
+
+        <!-- SALADS -->
+        <div class="section">
+            <div class="section-title">ΣΑΛΑΤΕΣ / SALADS</div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΚΡΗΤΙΚΗ / CREATAN SALAD</div>
+                    <div class="item-description">Χαρούπι, ντομάτα με γκρεμολάτα βασιλικού, κρέμα φέτας, κάπαρη και κρίταμο / Carob, tomato with basil gremolata, feta cream, capers and sea fennel</div>
+                </div>
+                <div class="item-price">8.00€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΧΩΡΙΑΤΙΚΗ / GREEK SALAD</div>
+                    <div class="item-description">Ντομάτα, αγγούρι, κρεμμύδι, φέτα και ελαιόλαδο μεσσηνίας / Tomato, cucumber, onion, , Greek cheese feta and olive oil messinias</div>
+                </div>
+                <div class="item-price">9.00€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΘΕΡΑΠΕΥΤΗΡΙΟΝ / THERAPEUTIC SALAD</div>
+                    <div class="item-description">Πράσινη σαλάτα, αχλάδι, κατσικίσιο τυρί, λαλάγγι και σάλτσα εσπεριδοειδών / Mixed leave salad, pear, goat cheese, langlagi and citrus sauce</div>
+                </div>
+                <div class="item-price">9.50€</div>
+            </div>
+              <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΧΟΡΤΑ / LEAFY GREENS</div>
+                    <div class="item-description">Χόρτα εποχής με ελαιόλαδο μεσσηνίας/ Seasonal greens with Messinian olive oil</div>
+                </div>
+                <div class="item-price">6.50€</div>
+            </div>
+             <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΠΟΛΙΤΙΚΗ / POLITIKH</div>
+                    <div class="item-description">Λεύκο και κόκκινο λάχανο, καρότο, πιπεριές και σέλερι/ White and red cabbage, carrot, bell peppers and celery</div>
+                </div>
+                <div class="item-price">6.00€</div>
+            </div>
+             <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">NTOMATA / TOMATOES</div>
+                    <div class="item-description">Ντομάτα χαραχτή με ελιές και ελαιόλαδο μεσσηνίας/ Sliced tomato with olives and Messinian olive oil </div>
+                </div>
+                <div class="item-price">5,00€</div>
+            </div>
+
+            <div class="divider"></div>
+        </div>
+
+        <!-- MAIN COURSES -->
+        <div class="section">
+            <div class="section-title">ΜΕΖΕΚΛΙΚΙΑ / APPETIZERS</div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΜΑΝΙΤΑΡΙΑ ΜΠΟΥΓΙΟΥΡΝΤΙ / BOYIOURDI MUSHROOMS</div>
+                    <div class="item-description">Ποικιλία από φρέσκα μανιτάρια, φέτα,τσίλι και φρέσκα μυρωδικά / Variety of fresh mushrooms cooked with feta cheese, chilli and fresh herbs</div>
+                </div>
+                <div class="item-price">7.00€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΚΟΛΟΚΥΘΟΚΕΦΤΕΔΕΣ / FRIED ZUCCHINI CROQUETTES</div>
+                    <div class="item-description">Αφράτοι κολοκυθοκεφτέδες με φρέσκα μυρωδικά και δροσερή σάλτσα γιαουρτιού /Fluffy zucchini balls with fresh herbs and refreshing yogurt sauce</div>
+                </div>
+                <div class="item-price">6.50€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΜΕΛΙΤΖΑΝΕΣ ΤΗΓΑΝΙΤΕΣ / FRIED EGGPLANTS</div>
+                    <div class="item-description"></div>
+                </div>
+                <div class="item-price">6.00€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΤΗΓΑΝΙΑ ΚΟΤΟΠΟΥΛΟ / CHICKEN IN THE PAN</div>
+                    <div class="item-description">Φιλέτο κοτόπουλο με λιαστή ντομάτα και σάλτσα φέτας / Chicken fillet in the pan, with tomato and feta sauce</div>
+                </div>
+                <div class="item-price">8.50€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΚΕΦΤΕΔΑΚΙΑ ΜΟΣΧΑΡΙΣΙΑ / BEEF MEATBALLS</div>
+                    <div class="item-description">Κεφτεδάκια απο 100% Μοσχαρίσιο κιμά με τηγανητές πατάτες / 100% Beef meatballs with and fried potatoes</div>
+                </div>
+                <div class="item-price">7.50€</div>
+            </div>
+
+          <div class="menu-item" style="flex-direction: column; align-items: stretch;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div class="item-name">ΠΑΤΑΤΕΣ ΤΗΓΑΝΙΤΕΣ / FRENCH FRIES</div>
+        <div class="item-price">4.00€</div>
+    </div>
+
+    <div class="menu-item" style="margin: 5px 0; display: flex; justify-content: space-between;">
+        <div class="item-description">Με χανιώτικη γραβιέρα / With traditional Greek graviera cheese</div>
+        <div class="item-price">5.00€</div>
+    </div>
+
+    <div class="menu-item" style="margin: 5px 0; display: flex; justify-content: space-between;">
+        <div class="item-description">Με κιμά / With minced meat</div>
+        <div class="item-price">6.00€</div>
+    </div>
+
+    <div class="menu-item" style="margin: 5px 0; display: flex; justify-content: space-between;">
+        <div class="item-description">Με αυγό τηγανητό / With fried egg</div>
+        <div class="item-price">5.00€</div>
+    </div>
+</div>
+
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΝΤΑΚΑΚΙΑ ΓΑΥΡΟΥ / ANCHOVY RUSKS</div>
+                    <div class="item-description">Ντακάκια με γάυρο μαρινάτο, φρέσκια ντομάτα, ελιές και φέτα / Meatballs in yogurtlu sauce, tomato sauce and pitta bread</div>
+                </div>
+                <div class="item-price">7.50€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΛΟΥΚΑΝΙΚΟ / RUSTIC SAUSAGE</div>
+                    <div class="item-description">Λουκάνικο ανάμεικτο / Mixed sausage</div>
+                </div>
+                <div class="item-price">7.00€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΠΑΣΤΟ ΜΑΝΗΣ / SMOKED PORK FROM MANI</div>
+                    <div class="item-description">Φετούλες παστό με λαλάγγι, ελιές και γραβιέρα / Slices if smoked pork with lalanghi, olives and graviera cheese</div>
+                </div>
+                <div class="item-price">8.00€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΣΥΚΩΤΙ ΡΙΓΑΝΑΤΟ / LIVER WITH OREGANO</div>
+                    <div class="item-description">Μοσχαρίσιο συκώτι με ελαιόλαδο μεσσηνίας, λεμόνι και φρέσκια ρίγανη Ταυγέτου / Liver seared with extra virgin olive oil, lemon and fresh oregano</div>
+                </div>
+                <div class="item-price">8.50€</div>
+            </div>
+
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΤΗΓΑΝΙΑ ΧΟΙΡΙΝΗ / PORK IN THE PAN</div>
+                    <div class="item-description">Χοιρινός λαιμός με πιπεριές και λευκό κρασί/ Pork neck with peppers and white wine</div>
+                </div>
+                <div class="item-price">8.00€</div>
+            </div>
+
+           <div class="menu-item" style="flex-direction: column; align-items: stretch;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div class="item-name">ΚΑΓΙΑΝΑΣ / KAGIANAS</div>
+        <div class="item-price">6.00€</div>
+    </div>
+    <div class="item-description">
+        Παραδοσιακός καγιανάς με φρέσκιες ντομάτες, αυγά και ελαιόλαδο μεσσηνίας / Traditional Kagianá with Fresh Tomatoes, Eggs, and Messinian Olive Oil
+    </div>
+    <div class="menu-item" style="margin: 5px 0; display: flex; justify-content: space-between;">
+        <div class="item-description"> καγιανάς με παστό / kagianas with pasto pork cured</div>
+        <div class="item-price">8.00€</div>
+    </div>
+</div>
+
+            <div class="divider"></div>
+
+            
+        </div>
+
+       
+        <!-- MAIN COURSES -->
+        <div class="section">
+            <div class="section-title">ΚΥΡΙΑ ΠΙΑΤΑ / MAIN COURSES</div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΣΟΥΒΛΑΚΙ ΚΟΤΟΠΟΥΛΟ / CHICKEN SKEWER</div>
+                    <div class="item-description">Με πράσινη σαλάτα, πιτάκια, πατάτες και σως μουστάρδας/ With green salad, pita, fries and mustard sauce </div>
+                </div>
+                <div class="item-price">10,00€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΣΟΥΒΛΑΚΙ ΧΟΙΡΙΝΟ/ PORK SKEWER</div>
+                    <div class="item-description">Ντομάτα, κρεμμύδι, πιτάκια, πατάτες, τζατζίκι  / Tomato, onion, pita bread, fries and tzatziki</div>
+                </div>
+                <div class="item-price">10,00€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΓΙΑΟΥΡΤΛΟΥ / YOGURTLU</div>
+                    <div class="item-description">Κεφτεδάκια γιαουρτλού, σάλτσα ντομάτας και πιτάκια / Meatballs in yogurtlu sauce, tomato sauce and pita bread</div>
+                </div>
+                <div class="item-price">9.00€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΧΟΙΡΙΝΑ ΜΠΡΙΖΟΛΑΚΙΑ / PORK SLICES</div>
+                    <div class="item-description">Ζουμερά μπριζολάκια λαιμού / Juicy pork neck slices</div>
+                </div>
+                <div class="item-price">9.50€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΧΟΙΡΙΝΑ ΠΑΝΣΕΤΑΚΙΑ / PORK BELLY SLICES</div>
+                    <div class="item-description">Τραγανά Πανσετάκια / crispy pancetta</div>
+                </div>
+                <div class="item-price">9.00€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΜΟΣΧΑΡΙΣΙΑ ΜΠΡΙΖΟΛΑΚΙΑ / GRILLED BEEF SLICES</div>
+                    <div class="item-description"></div>
+                </div>
+                <div class="item-price">14.00€</div>
+            </div>
+
+             <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΜΠΙΦΤΕΚΙ ΜΟΣΧΑΡΙΣΙΟ / BEEF CUTLET </div>
+                    <div class="item-description">100% Μοσχαρίσιος κιμάς / 100% minced beef</div>
+                </div>
+                <div class="item-price">9.00€</div>
+            </div>
+
+             <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΦΙΛΕΤΑΚΙΑ ΚΟΤΟΠΟΥΛΟ / CHICKEN FILLETS</div>
+                    <div class="item-description"></div>
+                </div>
+                <div class="item-price">9.00€</div>
+            </div>
+
+             <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΣΝΙΤΣΕΛ ΚΟΤΟΠΟΥΛΟ / CHICKEN SCHNITZEL</div>
+                    <div class="item-description"></div>
+                </div>
+                <div class="item-price">8.50€</div>
+            </div>
+
+          <div class="menu-item" style="flex-direction: column; align-items: stretch;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div class="item-name">ΜΑΚΑΡΟΝΙΑ ΤΗΣ ΓΙΑΓΙΑΣ / TRADITIONAL GRANDMA'S PASTA</div>
+        <div class="item-price">7.50€</div>
+    </div>
+    <div class="item-description">
+        Χοντρό μακαρόνι περιχυμένο με καυτό ελαιόλαδο και φρέσκια μυζήθρα / Thick pasta drizzled with hot olive oil and fresh mizithra cheese.
+    </div>
+    <div class="menu-item" style="margin: 5px 0; display: flex; justify-content: space-between;">
+        <div class="item-description">Μακαρόνια της γιαγιάς με τηγανητό αυγό / With fried eggs</div>
+        <div class="item-price">9.00€</div>
+    </div>
+</div>
+             <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΣΤΑΒΛΙΣΙΑ / STABLE STEAK</div>
+                    <div class="item-description"> Ζουμερή χοιρινή μπριτζόλα με πατάτες 750gr~ / juicy pork chop ~750 g with potatoes </div>
+                </div>
+                <div class="item-price">17.00€</div>
+            </div>
+                <div class="menu-item">
+                <div class="item-info">
+                    
+                    <div class="item-description">*Στα κρεατικά μας μπορείτε να επιλέξετε συνοδευτικά σαλάτα, ρύζι ή πατάτες</div>
+                     <div class="item-description">*With our meat dishes, you can choose a side of salad, rice, or potatoes.</div>
+                </div>
+            <div class="divider"></div>
+        </div>
+
+        <!-- SPECIAL DISHES -->
+        <div class="section">
+            <div class="section-title">ΘΑΛΑΣΣΙΝΑ/ SEAFOOD</div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΓΑΡΙΔΕΣ ΨΗΤΕΣ/ GRILLED SHRIMP</div>
+                    <div class="item-description"></div>
+                </div>
+                <div class="item-price">12.00€</div>
+            </div>
+
+           
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΚΑΛΑΜΑΡΑΚΙΑ / Fried Calamari</div>
+                    <div class="item-description"></div>
+                </div>
+                <div class="item-price">9.50€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΓΑΡΙΔΕΣ ΣΑΓΑΝΑΚΙ / SHRIMP SAGANAKI </div>
+                    <div class="item-description">Σαγανάκι με φέτα ψητή ντομάτα και μυρωδικά / Prawns cooked with roasted tomato feta cheese and herbs </div>
+                </div>
+                <div class="item-price">10.00€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΧΤΑΠΟΔΙ ΞΙΔΑΤΟ/ MARINATED OCTAPUS</div>
+                    <div class="item-description"></div>
+                </div>
+                <div class="item-price">8.00€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΧΤΑΠΟΔΙ ΨΗΤΟ/ GRILLED OCTAPUS </div>
+                    <div class="item-description">Χταπόδι ψητό με χόρτα και ταραμά / Grilled octapus with seasonal greens and fish roe moussee</div>
+                </div>
+                <div class="item-price">15,00€</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΓΑΥΡΟΣ ΜΑΡΙΝΑTOΣ / MARINATED ANCHOVY</div>
+                    <div class="item-description">Φρέσκος μαρινάτος γάυρος / Fresh marinated anchovies</div>
+                </div>
+                <div class="item-price">5,50€</div>
+            </div>
+
+              <div class="divider"></div>
+        </div>
+
+        <!-- SPECIAL DISHES -->
+        <div class="section">
+            <div class="section-title">ΠΟΙΚΙΛΙΑ ΚΡΕΑΤΙΚΩΝ/ MEAT PLATTER</div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΠΟΙΚΙΛΙΑ ΚΡΕΑΤΙΚΩΝ/ MEAT PLATTER</div>
+                    <div class="item-description">Πανσετάκια, χοιρινά μπριζολάκια, λουκάνικο, πατάτες, κεφτεδάκια, τυροκροκέτες, πιτάκια, κοτόπουλο, σώς μουστάρδας, BBQ, γιαουρτλού  / Pork belly bites, small pork chops, sausage, potatoes, meatballs, cheese croquettes, savory pies, chicken and BBQ, yogurt and mustard sauce</div>
+                </div>
+                <div class="item-price">35.00€</div>
+            </div>
+        <div class="divider"></div>
+               <div class="section">
+            <div class="section-title">ΤΥΡΙΑ/CHEESE SECTION </div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΛΟΥΚΟΥΜΑΔΕΣ ΦΕΤΑΣ/ CHEESE CROQUETTES</div>
+                    <div class="item-description">Λουκομάδες φέτας με μαρμελάδα ντομάτας/ Small feta doughnuts with tomato jam </div>
+                </div>
+                <div class="item-price">6,50€</div>
+            </div>
+
+
+             <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΣΑΓΑΝΑΚΙ/ SAGANAKI (FRIED CHEESE)</div>
+                    <div class="item-description">Τραγανό σαγανάκι με κασέρι Ξάνθης, μαρμελάδα και σουσάμι / Crispy fried kasseri(yellow cheese) of Xanthi, jam and sesame </div>
+                </div>
+                <div class="item-price">6,00€</div>
+            </div>
+
+             <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΦΕΤΑ ΜΠΟΥΓΙΟΡΝΤΙ/ FETA BOUGIOURDI</div>
+                    <div class="item-description">Φέτα στη λαδόκολλα με πιπεριές και μπούκοβο / Feta cheese mixed with peppers cooked adn served in baking paper </div>
+                </div>
+                <div class="item-price">5,50€</div>
+            </div>
+
+             <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΦΕΤΑ ΠΟΠ ΚΑΛΑΜΑΤΑΣ/ KALAMATA D.O.P FETA CHEESE</div>
+                    <div class="item-description"> </div>
+                </div>
+                <div class="item-price">4,50€</div>
+            </div>
+
+             <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">ΓΡΑΒΙΕΡΑ ΜΕΣΣΗΝΙΑΣ/ GRAVIERA OF MESSINIA</div>
+                    <div class="item-description"> </div>
+                </div>
+                <div class="item-price">4,50€</div>
+            </div>
+        </div>
+
+        </div>
+
+        
+        <div class="footer">
+            <p>Laterna | Παραδοσιακή Κουζίνα</p>
+            <p style="margin-top: 10px;">Enjoy your meal!</p>
+        </div>
+    </div>
+</body>
+</html>
