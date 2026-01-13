@@ -5,133 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laterna - Παραδοσιακή Κουζίνα</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-        }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: white;
-        }
+/* MAIN CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: white;
+}
 
-        .header {
-            text-align: center;
-            margin-bottom: 50px;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 30px;
-        }
+/* HEADER */
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 40px;
+}
 
-        .logo-image {
-            width: 200px;
-            height: 200px;
-            margin-bottom: 30px;
-            object-fit: contain;
-        }
+.logo-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 60px;
+    object-fit: contain;
+}
 
-        .logo-text {
-            display: none;
-        }
+.logo-text {
+    display: none;
+}
 
-        .tagline {
-            font-size: 14px;
-            color: #7f8c8d;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
+.tagline {
+    font-size: 14px;
+    color: #7f8c8d;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
 
-        .section {
-            margin-bottom: 45px;
-        }
+/* SECTIONS */
+.section {
+    margin-bottom: 45px;
+}
 
-        .section-title {
-            font-size: 24px;
-            color: #2c3e50;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #2c3e50;
-            font-weight: 500;
-            letter-spacing: 1px;
-        }
+.section-title {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #2c3e50;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
 
-        .menu-item {
-            margin-bottom: 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 15px;
-        }
+.menu-item {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
 
-        .item-info {
-            flex: 1;
-        }
+.item-info {
+    flex: 1;
+}
 
-        .item-name {
-            font-size: 16px;
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
+.item-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
 
-        .item-name-gr {
-            font-size: 14px;
-            color: #7f8c8d;
-            margin-bottom: 8px;
-            font-style: italic;
-        }
+.item-name-gr {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 8px;
+    font-style: italic;
+}
 
-        .item-description {
-            font-size: 13px;
-            color: #666;
-            line-height: 1.5;
-        }
+.item-description {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
 
-        .item-price {
-            font-size: 16px;
-            font-weight: 700;
-            color: #2c3e50;
-            white-space: nowrap;
-            padding-top: 5px;
-        }
+.item-price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2c3e50;
+    white-space: nowrap;
+    padding-top: 5px;
+}
 
-        .divider {
-            height: 1px;
-            background-color: #ecf0f1;
-            margin: 30px 0;
-        }
+.divider {
+    height: 1px;
+    background-color: #ecf0f1;
+    margin: 30px 0;
+}
 
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 2px solid #2c3e50;
-            color: #7f8c8d;
-            font-size: 13px;
-        }
+/* FOOTER */
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid #2c3e50;
+    color: #7f8c8d;
+    font-size: 13px;
+}
 
-        @media (max-width: 600px) {
-            .logo-text {
-                font-size: 36px;
-            }
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .logo-text {
+        font-size: 36px;
+    }
 
-            .menu-item {
-                flex-direction: column;
-            }
+    .menu-item {
+        flex-direction: column;
+    }
 
-            .item-price {
-                padding-top: 0;
-            }
-        }
+    .item-price {
+        padding-top: 0;
+    }
+}
+
+/* PRINT STYLES */
+
+
     </style>
 </head>
 <body>
